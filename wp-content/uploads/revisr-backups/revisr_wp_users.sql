@@ -1,17 +1,4 @@
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 DROP TABLE IF EXISTS `wp_users`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `wp_users` (
   `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_login` varchar(60) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
@@ -28,20 +15,6 @@ CREATE TABLE `wp_users` (
   KEY `user_nicename` (`user_nicename`),
   KEY `user_email` (`user_email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
 LOCK TABLES `wp_users` WRITE;
-/*!40000 ALTER TABLE `wp_users` DISABLE KEYS */;
-INSERT INTO `wp_users` VALUES (1,'denysrocha','$P$B/is4Mj0iOp/Z8pg..ie6shBuq0J5Q0','denysrocha','denys.rocha@getrak.com.br','http://18.191.201.89/wordpress','2020-04-22 15:00:53','',0,'denysrocha'),(2,'nay','$P$BwEI.FKh6f/lhQ02hY351UvsxJW1vK/','nay','nayara.machado@getrak.com.br','','2020-04-22 17:26:35','1587576395:$P$BBoTY3T6e5idu3cksuVi2yOp6ryiiJ.',0,'Nayara Machado');
-/*!40000 ALTER TABLE `wp_users` ENABLE KEYS */;
+INSERT INTO `wp_users` VALUES ('1','denysrocha','$P$B/is4Mj0iOp/Z8pg..ie6shBuq0J5Q0','denysrocha','denys.rocha@getrak.com.br','http://18.191.201.89/wordpress','2020-04-22 15:00:53','','0','denysrocha'), ('2','nay','$P$BwEI.FKh6f/lhQ02hY351UvsxJW1vK/','nay','nayara.machado@getrak.com.br','','2020-04-22 17:26:35','1587576395:$P$BBoTY3T6e5idu3cksuVi2yOp6ryiiJ.','0','Nayara Machado');
 UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
